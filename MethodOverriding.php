@@ -1,35 +1,37 @@
 <?php
 
 class Hewan {
-
-    public function suara(){
-        echo "Hewan mengeluarkan suara";
+public function suara(){
+    echo "Hewan mengeluarkan suara";
     }
 
 }
 
 class Kucing extends Hewan {
 
-    public function suara(){
-        echo "Meong";
+public function suara(){
+    echo "Meong";
     }
 
 }
 
 class Anjing extends Hewan {
 
-    public function suara(){
-        echo "Guk Guk";
+public function suara(){
+    echo "Guk Guk";
     }
 
 }
 
 $kucing = new Kucing();
 $anjing = new Anjing();
+$hewan = new Hewan();
+
+$hewan->suara();
+echo "<br>";
 
 $kucing->suara();
 echo "<br>";
 
 $anjing->suara();
-
 ?>
